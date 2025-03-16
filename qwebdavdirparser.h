@@ -73,7 +73,7 @@ public:
     ~QWebdavDirParser();
 
     //! get all items of a collection
-    bool listDirectory(QWebdav *pWebdav, const QString &path);
+    bool listDirectory(QWebdav *pWebdav, const QString &path, bool recursive = false);
     //! get only information about the collection
     bool getDirectoryInfo(QWebdav *pWebdav, const QString &path);
     //! get only information about a file
